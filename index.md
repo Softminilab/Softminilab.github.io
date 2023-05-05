@@ -1,4 +1,1 @@
-### asdfsfsadf
-* d
-* 2
-* 3
+![](soft_mini_lab.png)
