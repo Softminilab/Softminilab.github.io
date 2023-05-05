@@ -1,4 +1,6 @@
-![](images/soft_mini_lab.png)
+![](images/soft_mini_lab.png){ width=260px,height:260px }
+[二维码｜Qr code](itms-apps://itunes.apple.com/app/id1620996505)
+[计数器｜Counter](itms-apps://itunes.apple.com/app/id6446799575)
 <!-- <a href="#">
 	<img src="images/soft_mini_lab.png" height="260"/>
 </a> -->
