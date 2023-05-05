@@ -23,8 +23,11 @@ github_username:
 
 # Build settings
 markdown: kramdown
-theme: no-style-please
-remote_theme: no-style-please
+# theme: no-style-please
+# remote_theme: no-style-please
+
+remote_theme: PasseRR/jekyll-gitbook-theme
+
 plugins:
   - jekyll-feed
 
