@@ -24,6 +24,7 @@ github_username:
 # Build settings
 markdown: kramdown
 theme: no-style-please
+remote_theme: no-style-please
 plugins:
   - jekyll-feed
 
