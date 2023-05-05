@@ -1,4 +1,12 @@
-<!-- ![](soft_mini_lab.png) -->
-<a href="http://www.baidu.com">
-	<img src="soft_mini_lab.png" alt="alt text" title="image Title" height="150"/>
+<a href="#">
+	<img src="images/soft_mini_lab.png" height="260"/>
+</a>
+</br>
+</br>
+<a href="itms-apps://itunes.apple.com/app/id6446799575">
+	<img src="images/counter.png" height="150"/>
+</a>
+</br>
+<a href="itms-apps://itunes.apple.com/app/id1620996505">
+	<img src="images/qrcode.png" height="150"/>
 </a>
