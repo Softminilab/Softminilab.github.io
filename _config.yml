@@ -23,7 +23,7 @@ github_username:
 
 # Build settings
 markdown: kramdown
-theme: Neumorphism
+theme: no-style-please
 plugins:
   - jekyll-feed
 
