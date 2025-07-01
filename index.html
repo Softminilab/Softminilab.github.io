@@ -4,90 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Softminilab</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #FFFFFF;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            font-size: 36px;
-            font-weight: 500;
-            text-align: left;
-            margin: 40px;
-        }
-        .header .soft {
-            color: #ff9800; /* Orange - vibrant and eye-catching */
-        }
-        .header .mini {
-            color: #4caf50; /* Green - fresh and modern */
-        }
-        .header .lab {
-            color: #2196f3; /* Blue - clean and professional */
-        }
-        .container-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: calc(100vh - 100px);
-        }
-        .container {
-            display: grid;
-            gap: 50px;
-            max-width: 1200px;
-            width: 100%;
-            justify-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-        .item {
-            width: 100%;
-            max-width: 180px;
-        }
-        .item img {
-            width: 100%;
-            border-radius: 36px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-        }
-        .item-title {
-            margin-top: 10px;
-            font-size: 16px;
-            font-weight: 500;
-            color: #333;
-        }
-        @media (min-width: 768px) {
-            .container {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        @media (max-width: 767px) {
-            .container {
-                grid-template-columns: 1fr;
-            }
-            .header {
-                font-size: 28px;
-                margin: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <span class="soft">Soft</span><span class="mini">mini</span><span class="lab">lab</span>
+
+    <div class="page-container">
+        <header>
+            <div class="logo">Softmini<span>lab</span></div>
+        </header>
+
+        <main class="app-grid">
+            <a href="#" class="app-item">
+                <img src="assets/images/coves.png" alt="Coves App Icon">
+                <p>Coves</p>
+            </a>
+            <a href="#" class="app-item">
+                <img src="assets/images/habit.png" alt="Habit App Icon">
+                <p>Habit</p>
+            </a>
+            <a href="#" class="app-item">
+                <img src="assets/images/daycount.png" alt="DayCount App Icon">
+                <p>DayCount</p>
+            </a>
+            <a href="#" class="app-item">
+                <img src="assets/images/swiftlist.png" alt="SwiftList App Icon">
+                <p>SwiftList</p>
+            </a>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="mailto:karepbq@gmail.com">Contact Us</a>
+                <a href="privacy.html">Privacy</a>
+            </nav>
+        </footer>
     </div>
-    <div class="container-wrapper">
-        <div class="container">
-            <div class="item">
-                <a href="itms-apps://itunes.apple.com/app/id6446799575"><img src="images/counter.png" alt="Image 1"></a>
-                <div class="item-title">counter</div>
-            </div>
-            <div class="item">
-                <a href="itms-apps://itunes.apple.com/app/id1620996505"><img src="images/qrcode.png" alt="Image 2"></a>
-                <div class="item-title">QR Code</div>
-            </div>
-        </div>
-    </div>
+
 </body>
 </html>
