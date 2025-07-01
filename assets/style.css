@@ -10,9 +10,10 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #fdfdfd; /* A slightly softer white */
-    color: #333333; /* Softer than pure black for better readability */
+    /* 1. 移除 Google Fonts，改用通用系统字体栈 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background-color: #fdfdfd;
+    color: #333333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -23,20 +24,20 @@ body {
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px; /* 稍微增加最大宽度以适应大字体 */
     margin: 0 auto;
-    padding: 0 2rem; /* Horizontal padding */
+    padding: 0 2.5rem; /* 增加水平边距 */
 }
 
 /* --- Header & Logo --- */
 header {
-    padding: 3rem 0; /* More vertical space */
+    padding: 3.5rem 0;
 }
 
 .logo {
-    font-size: 1.75rem; /* Slightly larger */
+    font-size: 2rem; /* 2. 增大 Logo 字体 */
     font-weight: 700;
-    letter-spacing: -0.5px; /* A touch of design refinement */
+    letter-spacing: -0.5px;
 }
 
 .logo a {
@@ -45,14 +46,14 @@ header {
 }
 
 .logo span {
-    color: #ff453a; /* iOS System Red for a modern feel */
+    color: #ff453a;
 }
 
 /* --- Main Content Area --- */
 .main-content {
-    flex-grow: 1; /* This pushes the footer to the bottom */
+    flex-grow: 1;
     display: flex;
-    align-items: center; /* Vertically center the app grid */
+    align-items: center;
     justify-content: center;
     width: 100%;
 }
@@ -62,8 +63,8 @@ header {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 5rem; /* More generous spacing */
-    padding: 3rem 0;
+    gap: 6rem; /* 增加图标间距 */
+    padding: 4rem 0;
 }
 
 .app-item {
@@ -73,52 +74,50 @@ header {
     text-align: center;
     text-decoration: none;
     color: inherit;
-    width: 160px;
+    width: 180px; /* 增加项目宽度 */
 }
 
 .app-item img {
-    width: 150px;
-    height: 150px;
+    width: 170px; /* 增大图标尺寸 */
+    height: 170px;
     border-radius: 22.5%;
-    /* A more subtle, layered shadow for a premium feel */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05), 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .app-item:hover img {
-    transform: translateY(-8px) scale(1.03); /* Lift and scale effect */
+    transform: translateY(-10px) scale(1.04); /* 增大幅度 */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07), 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
 .app-item p {
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.25rem; /* 2. 增大App名称字体 */
     color: #444;
 }
 
 /* --- Footer --- */
 footer {
-    padding: 4rem 0;
+    padding: 5rem 0;
     text-align: center;
 }
 
 footer nav {
     display: inline-flex;
-    gap: 3rem;
+    gap: 3.5rem;
 }
 
 footer nav a {
     color: #555;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.1rem; /* 2. 增大页脚链接字体 */
     padding-bottom: 5px;
     position: relative;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Underline effect */
 footer nav a::after {
     content: '';
     position: absolute;
@@ -143,42 +142,46 @@ footer nav a:hover::after {
 /* --- Privacy Page Specific Styles --- */
 .privacy-content {
     width: 100%;
-    max-width: 720px;
-    text-align: left;
+    max-width: 800px;
     padding: 2rem 0;
     color: #4a4a4a;
+    /* 3. 使隐私协议内容块在 main 区域内居中 */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* 使内部文本居中 */
 }
 
 .privacy-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem; /* 2. 增大隐私页标题 */
     font-weight: 700;
     color: #111;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .privacy-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem; /* 2. 增大隐私页二级标题 */
     font-weight: 600;
     color: #222;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
 }
 
 .privacy-content p, .privacy-content ul {
-    font-size: 1rem;
-    line-height: 1.8; /* Increased line height for readability */
-    margin-bottom: 1.5rem;
+    font-size: 1.1rem; /* 2. 增大隐私页正文 */
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    text-align: left; /* 保持段落和列表左对齐以保证可读性 */
 }
 
 .privacy-content ul {
     list-style-position: outside;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
 }
 
 .privacy-content ul li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .privacy-content a {
@@ -186,6 +189,7 @@ footer nav a:hover::after {
     text-decoration: none;
     border-bottom: 1px solid #007aff;
 }
+
 .privacy-content a:hover {
     color: #0056b3;
     border-bottom-color: #0056b3;
@@ -198,19 +202,19 @@ footer nav a:hover::after {
         padding: 0 1.5rem;
     }
 
-    header { padding: 2rem 0; }
-    footer { padding: 3rem 0; }
+    header { padding: 2.5rem 0; }
+    footer { padding: 4rem 0; }
 
     .app-grid {
-        gap: 4rem;
+        gap: 5rem;
     }
 }
 
 @media (max-width: 600px) {
     .app-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns on small screens */
-        gap: 2.5rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
         padding: 2rem 0;
     }
 
@@ -222,11 +226,16 @@ footer nav a:hover::after {
         width: 100%;
         height: auto;
     }
+    
+    .app-item p {
+        font-size: 1.1rem; /* 移动端App名称字体微调 */
+    }
 
     .logo, .privacy-content h1 {
         text-align: center;
     }
 
-    .privacy-content h1 { font-size: 2rem; }
-    .privacy-content h2 { font-size: 1.3rem; }
+    .privacy-content h1 { font-size: 2.2rem; }
+    .privacy-content h2 { font-size: 1.5rem; }
+    .privacy-content p, .privacy-content ul { font-size: 1rem; }
 }
